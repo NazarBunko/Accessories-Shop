@@ -1,12 +1,17 @@
 package com.example.accessories_shop.domain.device;
 
-public interface Device {
-    // Метод для отримання назви пристрою
-    String getName();
+import lombok.Data;
 
-    // Метод для отримання ціни пристрою
-    double getPrice();
+import java.time.LocalDateTime;
 
-    // Метод для отримання типу пристрою
-    String getType();
+@Data
+public class Device {
+
+    private Long id;
+    private String name;
+    private double price;
+    private String description;
+    private Status status;
+    private LocalDateTime expirationDate;
+
 }

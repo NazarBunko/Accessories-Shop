@@ -2,7 +2,6 @@ package com.example.accessories_shop.domain.user;
 
 import com.example.accessories_shop.domain.device.Device;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.amqp.RabbitConnectionDetails;
 
 import java.util.List;
 import java.util.Set;
@@ -16,5 +15,6 @@ public class User {
     private String password;
     private String passwordConfirmation;
     private Set<Role> roles;
-    private List<Device> purchases;
+    private List<Device> devices;
+
 }
