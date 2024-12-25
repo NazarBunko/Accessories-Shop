@@ -11,7 +11,7 @@ public interface DeviceService {
 
     Device update(Device device);
 
-    Device create(Device device);
+    Device create(Device device, Long id);
 
     void delete(Long id);
 }

@@ -25,7 +25,7 @@ public class DeviceServiceImpl implements DeviceService {
     }
 
     @Override
-    public Device create(Device device) {
+    public Device create(Device device, Long id) {
         return null;
     }
 
