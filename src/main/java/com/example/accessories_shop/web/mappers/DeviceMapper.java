@@ -3,9 +3,11 @@ package com.example.accessories_shop.web.mappers;
 import com.example.accessories_shop.domain.device.Device;
 import com.example.accessories_shop.web.dto.device.DeviceDto;
 import org.mapstruct.Mapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 @Mapper(componentModel = "spring")
 public interface DeviceMapper {
 

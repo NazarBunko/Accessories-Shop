@@ -4,7 +4,7 @@ import com.example.accessories_shop.domain.device.Device;
 
 import java.util.List;
 
-public interface DeviceService {
+public interface DeviceService{
     Device getById(Long id);
 
     List<Device> getAllByUserId(Long id);

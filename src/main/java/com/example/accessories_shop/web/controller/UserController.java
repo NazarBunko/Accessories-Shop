@@ -19,7 +19,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/users")
-@RequiredArgsConstructor
 @Validated
 public class UserController {
 
@@ -28,6 +27,13 @@ public class UserController {
 
     private final UserMapper userMapper;
     private final DeviceMapper deviceMapper;
+
+    public UserController(UserService userService, DeviceService deviceService, UserMapper userMapper, DeviceMapper deviceMapper) {
+        this.userService = userService;
+        this.deviceService = deviceService;
+        this.userMapper = userMapper;
+        this.deviceMapper = deviceMapper;
+    }
 
     @PutMapping
     public UserDto update(@Validated(OnUpdate.class) @RequestBody UserDto dto) {
